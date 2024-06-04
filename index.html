@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne Finance & Insurance Group</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="c:\Users\gayans\Desktop\Melbourne Finance and Insurance - Logo Inverse.jpg" width="400px" height="200px" alt="Melbourne Finance & Insurance Group Logo">
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@mfi.net.au">info@mfi.net.au</a></p>
+            <p>Phone: 0431 168 465</p>
+            <p>Instagram: <a href="https://instagram.com/melb.fi" target="_blank">@melb.fi</a></p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="introduction">
+            <h1>Welcome to Melbourne Finance & Insurance Group</h1>
+            <p>We are a leading finance and insurance brokerage offering personalized services to meet your needs.</p>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-categories">
+                <div class="personal-insurance">
+                    <h3>Personal Insurance</h3>
+                    <ul>
+                        <li>Home and Contents</li>
+                        <li>Landlords</li>
+                        <li>Motor Vehicle</li>
+                        <li>Pleasure Craft</li>
+                    </ul>
+                </div>
+                <div class="business-insurance">
+                    <h3>Business Insurance</h3>
+                    <ul>
+                        <li>Business Insurance</li>
+                        <li>Public Liability</li>
+                        <li>Professional Indemnity</li>
+                        <li>Cyber Insurance</li>
+                        <li>Construction Insurance</li>
+                        <li>Builders Warranty</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="calculator">
+            <h2>Home Loan Repayment Calculator</h2>
+            <form id="loan-calculator">
+                <label for="loan-amount">Loan Amount:</label>
+                <input type="number" id="loan-amount" name="loan-amount" required>
+                
+                <label for="interest-rate">Interest Rate (%):</label>
+                <input type="number" step="0.01" id="interest-rate" name="interest-rate" required>
+                
+                <label for="loan-term">Loan Term (years):</label>
+                <input type="number" id="loan-term" name="loan-term" required>
+                
+                <button type="button" onclick="calculateRepayment()">Calculate</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Melbourne Finance & Insurance Group</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
